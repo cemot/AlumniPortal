@@ -1,0 +1,111 @@
+<%@ Master Language="VB" CodeFile="Alumni.master.vb" Inherits="Alumni" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-image: url(images/flwr.JPG)">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Panel ID="Panel1" runat="server" Height="315px" Style="z-index: 100; left: 144px;
+            position: absolute; top: 28px; background-image: url(images/new.jpg);" Width="1119px">
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="118px" ImageUrl="~/images/canstock2009856.jpg"
+                Style="z-index: 100; left: 7px; position: absolute; top: 14px" Width="208px" />
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <asp:Image ID="Image2" runat="server" Height="116px" ImageUrl="~/images/canstock6207026.jpg"
+                Style="z-index: 106; left: 847px; position: absolute; top: 19px" Width="265px" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <strong><em><span style="font-size: 48pt; color: #cc0033">
+                Alumni Union&nbsp;<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <marquee direction="right" style="z-index: 105; left: 220px; width: 624px; position: absolute;
+                    top: 117px"><SPAN style="FONT-SIZE: 16pt; COLOR: #ff9966">UNIVERSITY VISVESWARAYA COLLEGE OF ENGINEERING</SPAN></marquee>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Style="z-index: 105;
+            left: 3px; position: absolute; top: 160px; background-color: #999933;" Width="817px" BorderColor="goldenrod" BorderStyle="Groove" Font-Bold="True" ForeColor="Purple" Height="20px" Font-Size="Large" Font-Italic="False" BorderWidth="0px">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AlumniHome.aspx" Text="HOME" Value="New Item"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AlumniProfile.aspx" Text="PROFILE" Value="New Item1"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/CurrentProfile.aspx" Text="PROFILE" Value="Profile"></asp:MenuItem>
+                <asp:MenuItem Text="SEARCH" Value="Search">
+                    
+
+                    <asp:MenuItem Text="ALUMNI" Value="Alumni" NavigateUrl="~/AlummiSearch.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="CURRENT STUDENT" Value="Current Student" NavigateUrl="~/CurrentSearch.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="VIEW" Value="View">
+
+
+                    <asp:MenuItem NavigateUrl="~/EventView.aspx" Text="EVENTS" Value="Events"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/StaffView.aspx" Text="STAFF DETAILS" Value="Staff Details">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="MESSAGES" Value="Messages">
+                    
+                    
+                    <asp:MenuItem NavigateUrl="~/Message.aspx" Text="COMPOSE" Value="Compose"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Inbox.aspx" Text="INBOX" Value="Inbox"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ReportView.aspx" Text="REPORTS" Value="Reports"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+                <asp:Image ID="Image3" runat="server" Height="92px"
+                    Style="z-index: 103; left: 9px; position: absolute; top: 199px" Width="131px" />
+                <asp:TextBox ID="txtuser" runat="server" BorderStyle="None" Font-Bold="True" Font-Italic="True"
+                    Font-Names="Bookman Old Style" Font-Size="Medium" ForeColor="#404000" Style="z-index: 104;
+                    left: 11px; position: absolute; top: 293px; background-color: transparent;" Width="163px"></asp:TextBox>
+            </span></em></strong>
+        </asp:Panel>
+        &nbsp;<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Medium" Font-Underline="True"
+            Height="1px" NavigateUrl="~/AlumniPass.aspx" Style="z-index: 102; left: 1114px;
+            position: absolute; top: 196px">Settings</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" Font-Underline="True"
+            Height="1px" NavigateUrl="~/login.aspx" Style="z-index: 104; left: 1182px; position: absolute;
+            top: 196px" Width="56px">Log out</asp:HyperLink>
+        <br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

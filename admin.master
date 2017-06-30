@@ -1,0 +1,115 @@
+<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin" MasterPageFile="" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body alink="#6600cc">
+    <form id="form1" runat="server">
+    <div style="background-image: url('images/flwr.jpg'); margin-right: 0px; width: 1310px;">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div 
+            style="z-index: 100; left: 11px; width: 1292px; position: absolute; top: -10px;
+            height: 239px; background-image: url('images/new.jpg'); color: black;">
+            <asp:Image ID="Image1" runat="server" Height="134px" ImageUrl="~/images/canstock2009856.jpg"
+                Style="z-index: 100; left: 3px; position: absolute; top: 3px" Width="241px" />
+            &nbsp;
+            <marquee direction="right" style="z-index: 106; left: 249px; width: 663px; position: absolute;
+                top: 118px; color: palevioletred;"><SPAN 
+style="FONT-SIZE: 16pt; COLOR: maroon">UNIVERISTY VISVESWARAYA COLLEGE OF ENGINEERING</SPAN></marquee>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                Style="z-index: 102;
+                left: 7px; position: absolute; top: 154px; color: #ccffcc; background-color: #999933;" 
+                Width="938px" BorderColor="Goldenrod" BorderStyle="Groove" BorderWidth="5px" 
+                Font-Bold="True" ForeColor="Purple" Height="39px" BackColor="Black">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/admin1.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem Text="ALUMNI" Value="ALUMINI" NavigateUrl="~/SearchAlumini.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="CURRENT STUDENT" Value="CURRENT STUDENT" NavigateUrl="~/SearchCurrentStdnt.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="EVENTS" Value="EVENTS" NavigateUrl="~/Addevent.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="STAFF DETAILS" Value="STAFF DETAILS" NavigateUrl="~/AddStaff.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="REPORTS" Value="REPORTS" NavigateUrl="~/Report.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/NewlyReg.aspx" Text="NEWLY REGISTERED" Value="NEWLY REGISTERED">
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; <strong><em><span style="font-size: 48pt; color: #cc0033">Alumni
+                Union
+    <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Medium" Font-Underline="True"
+        Style="z-index: 103; left: 1015px; position: absolute; top: 182px" NavigateUrl="~/ChangePassword.aspx">Settings</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" Font-Underline="True"
+        NavigateUrl="~/login.aspx" Style="z-index: 104; left: 1086px; position: absolute;
+        top: 182px" Width="56px">Log out</asp:HyperLink>
+                &nbsp;
+                <asp:TextBox ID="txtuname" runat="server" BorderStyle="None" Font-Bold="True" Font-Italic="True"
+                    ForeColor="#0000C0" Style="z-index: 107; left: 1016px; position: absolute; top: 157px;
+                    background-color: transparent" Width="121px"></asp:TextBox>
+</span></em></strong>
+            <asp:Image ID="Image2" runat="server" Height="130px" ImageUrl="~/images/canstock6207026.jpg"
+                Style="z-index: 101; left: 929px; position: absolute; top: 15px" 
+                Width="280px" />
+            </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
